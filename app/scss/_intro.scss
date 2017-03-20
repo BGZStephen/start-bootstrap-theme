@@ -1,0 +1,23 @@
+.container__content--intro {
+  @include flex-col;
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: bolder;
+  justify-content: space-around;
+  line-height: 1;
+  min-height: calc(100vh - 50px);
+  margin-top: $header-height;
+  padding: 20px 15px;
+  text-align: center;
+  > h1 {
+    font-size: 1.9em;
+  }
+  > p {
+    line-height: 1.6;
+    font-weight: lighter;
+    color: $lighter-white;
+  }
+}

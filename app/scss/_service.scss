@@ -1,0 +1,31 @@
+.container__content--service {
+  @include flex-col;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 80px 15px;
+  > h2 {
+    font-weight: lighter;
+    font-size: 2em;
+  }
+}
+
+.service-container {
+  > .service-container__item {
+    margin: 60px 0;
+    > i {
+      color: $primary-orange;
+      margin-bottom: 15px;
+    }
+    > h3 {
+      margin: 10px 0;
+      font-size: 1.6em;
+      font-weight: lighter;
+    }
+    > p {
+      font-weight: lighter;
+      color: $secondary-gray;
+      line-height: 1.7;
+    }
+  }
+}

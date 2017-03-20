@@ -1,0 +1,12 @@
+.container__content--download {
+  @include flex-col;
+  background: #222;
+  color: white;
+  padding: 35px 15px;
+  text-align: center;
+  > h3 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.container__content--contact {
+  @include flex-col;
+  padding: 80px 15px;
+  > h3 {
+    font-size: 1.8em;
+    font-weight: lighter;
+  }
+  > p {
+    line-height: 1.8;
+  }
+}
+
+.social-container {
+  @include flex-col;
+  margin: 20px 0;
+  > i {
+    margin: 10px 0;
+  }
+}
+
+.social-container--email {
+  > p {
+    color: $primary-orange
+  }
+}

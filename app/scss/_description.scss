@@ -1,0 +1,17 @@
+.container__content--description {
+  @include flex-col;
+  background: $primary-orange;
+  color: white;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 15px;
+  text-align: center;
+  > h2 {
+    font-size: 1.8em;
+    font-weight: lighter;
+  }
+  > p {
+    line-height: 2;
+    color: $lighter-white;
+  }
+}

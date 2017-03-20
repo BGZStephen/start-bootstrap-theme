@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 25;
+  background: white;
+}
+
+.logo {
+  padding: 5px 15px;
+  font-weight: bold;
+  color: $primary-orange
+}
+
+.navbar__toggle {
+  padding:  5px 10px;
+  margin-right: 10px;
+  background: white;
+  font-size: 0.9em;
+  border: 1px solid lighten($secondary-gray, 38%);
+  > i {
+    margin-left: 5px;
+  }
+}
+
+.navbar__list {
+  background: white;
+  border-top: 1px solid lighten($secondary-gray, 38%);
+  opacity: 0;
+  padding: 10px 0;
+  position: absolute;
+  top: $header-height;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  z-index: 10;
+  > li {
+    padding: 20px 15px;
+  }
+}
+
+.container__content--intro {
+  margin-top: 80px;
+}

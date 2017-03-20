@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family--primary;
+
+}
+.container {
+  width: 100%;
+}
+
+.button {
+  padding: 18px 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: .8em;
+}
+
+.button--orange {
+  background: $primary-orange;
+  color: white;
+}
+
+.button--white {
+  background: white;
+  color: black;
+}
+
+.seperator {
+  display: block;
+  border-top: 2px solid;
+  width: 50px;
+  margin: 20px 0;
+}
+
+.seperator--orange {
+  border-color: $primary-orange
+}
+
+.seperator--white {
+  border-color: white;
+}
