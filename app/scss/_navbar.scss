@@ -8,12 +8,15 @@
   align-items: center;
   z-index: 25;
   background: white;
+  > a {
+    text-decoration: none;
+    color: $primary-orange;
+  }
 }
 
 .logo {
   padding: 10px 15px;
   font-weight: bold;
-  color: $primary-orange;
 }
 
 .navbar__toggle {
@@ -40,9 +43,14 @@
   transition: opacity 0.5s ease;
   width: 100%;
   z-index: 10;
-  > li {
-    padding: 20px 15px;
+  > a {
+    text-decoration: none;
+    color: black;
+    > li {
+      padding: 20px 15px;
+    }
   }
+
   @media (min-width: 758px) {
     border: none;
     display: flex;
@@ -52,8 +60,10 @@
     position: relative;
     top: 0;
     width: auto;
-    > li {
-      padding: 10px 15px;
+    a {
+      > li {
+        padding: 10px 15px;
+      }
     }
   }
 }

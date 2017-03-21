@@ -9,17 +9,17 @@
   </head>
   <body>
     <div class="navbar">
-      <span class="logo">START BOOTSTRAP</span>
+      <a href="#home"><span class="logo">START BOOTSTRAP</span></a>
       <button class="navbar__toggle">MENU<i class="fa fa-bars"></i></button>
       <ul class="navbar__list">
-        <li>ABOUT</li>
-        <li>SERVICES</li>
-        <li>PORTFOLIO</li>
-        <li>CONTACT</li>
+        <a href="#about"><li>ABOUT</li></a>
+        <a href="#services"><li>SERVICES</li></a>
+        <a href="#portfolio"><li>PORTFOLIO</li></a>
+        <a href="#contact"><li>CONTACT</li></a>
       </ul>
     </div>
     <div class="container">
-      <div class="container__content--intro">
+      <div id="home" class="container__content--intro">
         <h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
         <hr class="seperator seperator--orange">
         <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="container__content--description">
+      <div id="about" class="container__content--description">
         <h2>We've got what you need!</h2>
         <hr class="seperator seperator--white">
         <p>Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="container__content--service">
+      <div id="services" class="container__content--service">
         <h2>At Your Service</h2>
         <hr class="seperator seperator--orange">
         <div class="service-container">
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="container__content--portfolio">
+      <div id="portfolio" class="container__content--portfolio">
         <div class="portfolio-img-container">
           <div class="portfolio-img-container__item">
             <div class="portfolio-overlay">
@@ -117,7 +117,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="container__content--contact">
+      <div id="contact" class="container__content--contact">
         <h3>Let's Get In Touch!</h3>
         <hr class="seperator seperator--orange">
         <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
