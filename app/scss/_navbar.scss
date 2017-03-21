@@ -11,9 +11,9 @@
 }
 
 .logo {
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-weight: bold;
-  color: $primary-orange
+  color: $primary-orange;
 }
 
 .navbar__toggle {
@@ -24,6 +24,9 @@
   border: 1px solid lighten($secondary-gray, 38%);
   > i {
     margin-left: 5px;
+  }
+  @media (min-width: 758px) {
+    display: none;
   }
 }
 
@@ -40,8 +43,17 @@
   > li {
     padding: 20px 15px;
   }
-}
-
-.container__content--intro {
-  margin-top: 80px;
+  @media (min-width: 758px) {
+    border: none;
+    display: flex;
+    list-style: none;
+    opacity: 1;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+    > li {
+      padding: 10px 15px;
+    }
+  }
 }

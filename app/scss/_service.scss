@@ -2,7 +2,6 @@
   @include flex-col;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
   padding: 80px 15px;
   > h2 {
     font-weight: lighter;
@@ -11,21 +10,39 @@
 }
 
 .service-container {
-  > .service-container__item {
-    margin: 60px 0;
-    > i {
-      color: $primary-orange;
-      margin-bottom: 15px;
-    }
-    > h3 {
-      margin: 10px 0;
-      font-size: 1.6em;
-      font-weight: lighter;
-    }
-    > p {
-      font-weight: lighter;
-      color: $secondary-gray;
-      line-height: 1.7;
-    }
+  @include flex-col;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+    width: 80%;
+
+  }
+}
+
+.service-container__item {
+  width: 100%;
+  margin: 30px 0;
+  > i {
+    color: $primary-orange;
+    margin-bottom: 15px;
+  }
+  > h3 {
+    margin: 10px 0;
+    font-size: 1.6em;
+    font-weight: lighter;
+  }
+  > p {
+    font-weight: lighter;
+    color: $secondary-gray;
+    line-height: 1.7;
+  }
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+  @media (min-width: 1440px) {
+    width: 20%;
   }
 }

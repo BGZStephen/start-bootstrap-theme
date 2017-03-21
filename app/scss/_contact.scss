@@ -1,5 +1,6 @@
 .container__content--contact {
   @include flex-col;
+  text-align: center;
   padding: 80px 15px;
   > h3 {
     font-size: 1.8em;
@@ -7,18 +8,34 @@
   }
   > p {
     line-height: 1.8;
+    @media (min-width: 1440px) {
+      width: 60%;
+    }
   }
 }
 
 .social-container {
+  width: 100%;
   @include flex-col;
-  margin: 20px 0;
-  > i {
-    margin: 10px 0;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
-.social-container--email {
+.social {
+  @include flex-col;
+  margin: 20px 0;
+  width: 100%;
+  > i {
+    margin: 10px 0;
+  }
+  @media (min-width: 1440px) {
+    width: 25%;
+  }
+}
+
+.social--email {
   > p {
     color: $primary-orange
   }

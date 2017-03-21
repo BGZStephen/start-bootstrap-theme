@@ -3,8 +3,7 @@
   background: $primary-orange;
   color: white;
   justify-content: center;
-  min-height: 100vh;
-  padding: 20px 15px;
+  padding: 80px 15px;
   text-align: center;
   > h2 {
     font-size: 1.8em;
@@ -13,5 +12,14 @@
   > p {
     line-height: 2;
     color: $lighter-white;
+  }
+  @media (min-width: 768px) {
+    height: auto;
+    padding: 100px 30px;
+  }
+  @media (min-width: 1440px) {
+      > p, > h2 {
+        width: 60%;
+      }
   }
 }
