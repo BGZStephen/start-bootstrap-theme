@@ -261,6 +261,22 @@ body {
 .portfolio-img-container__item:hover .portfolio-overlay {
   opacity: .9; }
 
+.lightbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  background: black;
+  opacity: 1; }
+
 .container__content--download {
   display: flex;
   flex-direction: column;
